@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Username Generator</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="cat.png">
+    <link rel="icon" href="Image/pie-chart.png">
 </head>
 <body>
     <div class="container">
@@ -16,9 +16,9 @@
                 <option value="english">English</option>
                 <option value="spanish">Spanish</option>
                 <option value="french">French</option>
-                <option value="ភាសារខ្មែរ">ភាសារខ្មែរ</option>
                 <option value="khmer">Khmer</option>
                 <option value="thai">Thai</option>
+                <option value="ភាសារខ្មែរ">ភាសារខ្មែរ</option>
             </select>
             
             <br><br>
@@ -27,12 +27,14 @@
             <input type="number" id="count" value="1" min="1" style="width: 60px;">
             <br><br>
 
-            <label><input type="radio" name="generationType" value="name" checked> generate_name </label>
+            <label><input type="radio" name="generationType" value="name" checked> Get_name </label>
             <label><input type="radio" name="generationType" value="username"> Username</label>
             <br><br>
 
             <div class="button-container">
-                <button type="button" onclick="generate()">Generate</button>
+                <button type="button" onclick="generate()">Random</button>
+                <button type="button" onclick="generatePassword()">Password</button>
+                <button type="button" onclick="generateGmail()">Gmail</button>
                 <button type="button" onclick="copyOutput()">Copy</button>
             </div>
         </form>
@@ -57,15 +59,6 @@
         </div>
     </div>
     
-    <script src="script.js"></script>
-    <script>
-        // Function to handle donations and display a success message
-        function donate() {
-            // Open the donation link in a new tab
-            window.open('https://pay.ababank.com/PuN1K86pLPqMyq5w7', '_blank');
-            // Display a success message
-            document.getElementById('donateMessage').innerHTML = 'Thanks 💕😘';
-        }
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>
