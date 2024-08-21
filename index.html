@@ -5,28 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Username Generator</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Image/pie-chart.png">
 </head>
 <body>
     <div class="container">
-        <h1>Username Generator</h1>
+        <h1>𝐍𝐚𝐦𝐞𝟒𝐘𝐨𝐮</h1>
         <form id="nameForm">
             <label for="language">Select Language:</label>
             <select id="language">
                 <option value="english">English</option>
                 <option value="spanish">Spanish</option>
                 <option value="french">French</option>
+                <option value="ភាសារខ្មែរ">ភាសារខ្មែរ</option>
                 <option value="khmer">Khmer</option>
                 <option value="thai">Thai</option>
-                <!-- Add more languages as needed -->
             </select>
+            
             <br><br>
 
-            <label for="count">Number of Generations:</label>
+            <label for="count">Value:</label>
             <input type="number" id="count" value="1" min="1" style="width: 60px;">
             <br><br>
 
-            <label><input type="radio" name="generationType" value="name" checked> Generate Name</label>
-            <label><input type="radio" name="generationType" value="username"> Generate Username</label>
+            <label><input type="radio" name="generationType" value="name" checked> generate_name </label>
+            <label><input type="radio" name="generationType" value="username"> Username</label>
             <br><br>
 
             <div class="button-container">
@@ -34,10 +36,36 @@
                 <button type="button" onclick="copyOutput()">Copy</button>
             </div>
         </form>
+        
+        <!-- Output Frame -->
         <div id="outputFrame">
             <div id="usernameDisplay"></div>
         </div>
+        
+        <!-- Donate Section -->
+        <div class="donate-section">
+            <h2>Support Us</h2>
+            <button type="button" onclick="donate()">Donate</button>
+            <div id="donateMessage"></div>
+        </div>
+        
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:sohkunpot@gmail.com">sohkunpot@gmail.com</a></p>
+            <p>Phone: <a href="https://t.me/Khun_GenZ">+855-097-894-9007</a></p>
+        </div>
     </div>
+    
     <script src="script.js"></script>
+    <script>
+        // Function to handle donations and display a success message
+        function donate() {
+            // Open the donation link in a new tab
+            window.open('https://pay.ababank.com/PuN1K86pLPqMyq5w7', '_blank');
+            // Display a success message
+            document.getElementById('donateMessage').innerHTML = 'Thanks 💕😘';
+        }
+    </script>
 </body>
 </html>
