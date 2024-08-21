@@ -21,7 +21,7 @@
 //         lastNames: ["Sakchai", "Kumari", "Chai", "Srisuwan"]
 //     },
 //     // Added language
-//     'ភាសារខ្មែរ': {
+//     ភាសារខ្មែរ: {
 //         firstNames: ["Sokha", "Vanna", "Ratanak", "Maly"],
 //         lastNames: ["Phnom", "Sok", "Sros", "Chhoeung"]
 //     }
