@@ -67,7 +67,7 @@ function generate() {
 function copyOutput() {
     const outputText = document.getElementById('usernameDisplay').innerText;
     navigator.clipboard.writeText(outputText).then(() => {
-        alert('Output copied to clipboard!');
+        
     }).catch(err => {
         console.error('Failed to copy: ', err);
     });
