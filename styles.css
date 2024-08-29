@@ -1,0 +1,496 @@
+/* Add this to your styles.css file */
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-media {
+    margin: 20px 0;
+}
+
+.social-media-link {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 18px;
+}
+
+.social-media-link:hover {
+    text-decoration: underline;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+
+/* General styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 19px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.nav-list li a:hover {
+    background-color: #555;
+}
+
+/* Mobile menu styles */
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        border-top: 2px solid #555;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 0;
+    }
+
+    .nav-list li a {
+        display: block;
+        padding: 15px;
+    }
+}
+
+main {
+    padding: 80px 20px 20px; /* Adding top padding to account for the fixed header */
+}
+
+.generator {
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.generator h2 {
+    margin-top: 0;
+}
+
+.input-container {
+    text-align: center;
+}
+
+.input-container input {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.output-box {
+    width: 100%;
+    padding: 1px;
+    margin: 9px 0;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.generator {
+    margin-bottom: 2px;
+}
+
+.button {
+    margin-top: 1px;
+}
+
+.copy-button {
+    display: inline-block;
+    padding: 4px 20px;
+    background-color: #fff;
+    color: #82abda;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #333;
+
+
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+}
+
+.social-media {
+    margin: 20px 0;
+}
+
+.social-media-link {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 18px;
+}
+
+.social-media-link:hover {
+    text-decoration: underline;
+}
+
+.donate-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #5fabdd;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.donate-button:hover {
+    background-color: #66a5be;
+}
+
+/* Centering the consent section */
+.centered-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Hidden by default, shown in mobile view */
+}
+
+nav {
+    display: flex;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main Styles */
+main {
+    padding: 80px 20px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.button {
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: #fff;
+    color: #0f233a;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.feature {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    text-align: center;
+    padding: 20px;
+}
+
+.testimonial blockquote {
+    border-left: 4px solid #007BFF;
+    padding-left: 20px;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+/* Portfolio Section */
+.portfolio {
+    text-align: center;
+    padding: 20px;
+}
+
+.portfolio img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* Newsletter Section */
+.newsletter {
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.newsletter input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Team Section */
+.team {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.team-member {
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+}
+
+.team-member img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+/* Blog Section */
+.blog {
+    padding: 20px;
+}
+
+.blog-post {
+    margin-bottom: 20px;
+}
+
+/* FAQ Section */
+.faq {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.social-media {
+    margin: 10px 0;
+}
+
+.social-media-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .header-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+}
